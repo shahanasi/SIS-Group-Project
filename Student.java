@@ -6,6 +6,7 @@ public class Student
 		private Course course1;
 		private Course course2;
 		private Course course3;
+		
 		public String getFirstName() {
 			return firstName;
 		}
