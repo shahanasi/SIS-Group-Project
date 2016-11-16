@@ -3,6 +3,7 @@ public class Course
 		private int period;
 		private String name;
 		private int grade;
+		
 		public int getPeriod() {
 			return period;
 		}
