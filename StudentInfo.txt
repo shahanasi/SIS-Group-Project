@@ -94,9 +94,27 @@ Biology
 90
 English
 89
-Andy Cooper Biology D English F Algebra C+
-
-Rita Morovsky Algebra C Biology A- English B+
-
-Kia Harner Algebra A- Biology A English A+
-
+Andy
+Cooper
+Biology
+65
+English
+55
+Algebra
+79
+Rita
+Morovsky
+Algebra
+75
+Biology
+90
+English
+89
+Kia
+Harner
+Algebra
+90
+Biology
+95
+English
+100
