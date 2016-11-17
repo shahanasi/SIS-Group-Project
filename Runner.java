@@ -9,8 +9,8 @@ public class Runner
 					Scanner file=new Scanner(new File("StudentInfo.txt"));
 					ArrayList<Student> database = new ArrayList<Student>();
 					for(int i=0; 1<14; i++)
-					{
-						database.add(file.parse);
-					}
+						{
+							//database.add(file.parse);
+						}
 				}
 		}
