@@ -1,8 +1,10 @@
 package xcb;
-
+import java.util.Collections;
+import java.lang.Comparable;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class MakeStudentObjects
@@ -28,10 +30,7 @@ public class MakeStudentObjects
 		      			String thirdGrade = file.next();
 		      			gradebook.add(new Student(firstName,lastName,firstClass,firstGrade,secondClass,secondGrade,thirdClass,thirdGrade));
 		      		}
-		for (int i = 0; i < gradebook.size(); i++)
-			{
-				System.out.println(gradebook.get(i).getFirstName());
-			}
+		
 
 	}
 }
