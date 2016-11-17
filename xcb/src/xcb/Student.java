@@ -10,8 +10,9 @@ private String secondClass;
 private String secondGrade;
 private String thirdClass;
 private String thirdGrade;
+private double GPA;
 //a
-public Student(String fn, String ln, String fc, String fg, String sc, String sg, String tc, String tg)
+public Student(String fn, String ln, String fc, String fg, String sc, String sg, String tc, String tg, double gpa)
 	{
 	firstName = fn;
 	lastName = ln;
@@ -21,6 +22,17 @@ public Student(String fn, String ln, String fc, String fg, String sc, String sg,
 	secondGrade = sg;
 	thirdClass = tc;
 	thirdGrade = tg;
+	GPA = gpa;
+	}
+
+public double getGPA()
+	{
+		return GPA;
+	}
+
+public void setGPA(double gPA)
+	{
+		GPA = gPA;
 	}
 
 public String getFirstName()
