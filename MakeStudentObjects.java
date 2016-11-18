@@ -14,7 +14,7 @@ public class MakeStudentObjects
  			}
  		public static void getStudents() throws FileNotFoundException
 			{
- 		    	Scanner file = new Scanner( new File( "StudentInfo.txt" ) );   
+ 		    	Scanner file = new Scanner( new File( "StudentInfo.txt" ) );
 		      	while (file.hasNext())
  		      		{
  		      			String firstName = file.next();
