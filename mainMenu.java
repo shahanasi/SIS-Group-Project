@@ -1,12 +1,13 @@
 import java.io.FileNotFoundException;
  import java.util.Scanner;
+ 
  public class mainMenu
  	{
   
- public class mainMenu {
- public static void main(String[] args) {
- 	System.out.println(" ");
- }
+
+// public static void main(String[] args) {
+// 	System.out.println(" ");
+// }
  	//and
  		public static void main(String[] args) throws FileNotFoundException
  			{
@@ -16,6 +17,7 @@ import java.io.FileNotFoundException;
  			public static void mainMenu()
  			{
  				Scanner sorting = new Scanner(System.in);
+ 				System.out.println();
  				System.out.println("Welcome to the Student Gradebook!");
  				System.out.println("How would you like to see your students?");
  				System.out.println("(1) First Name");
@@ -38,4 +40,4 @@ import java.io.FileNotFoundException;
   }
  
   }
- }
+ 
