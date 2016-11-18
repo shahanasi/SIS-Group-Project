@@ -16,26 +16,27 @@ import java.io.FileNotFoundException;
  			}
  			public static void mainMenu()
  			{
- 				Scanner sorting = new Scanner(System.in);
+ 				Scanner choice = new Scanner(System.in);
  				System.out.println();
  				System.out.println("Welcome to the Student Gradebook!");
- 				System.out.println("How would you like to see your students?");
- 				System.out.println("(1) First Name");
- 				System.out.println("(2) Last Name");
- 				System.out.println("(3) GPA (Highest to Lowest)");
- 				System.out.println("(4) GPA (Lowest to Highest)");
- 				int sortingChoice = sorting.nextInt();
+ 				System.out.println("What would you like to do?");
+ 				System.out.println("(1) Add or delete a student");
+ 				System.out.println("(2) Change a student's grades or schedule");
+ 				System.out.println("(3) Sort students");
+ 				int choice1 = choice.nextInt();
  				// Change this switch statement to run different classes each different case
- 				switch (sortingChoice)
+ 				switch (choice1)
  				{
- 					case 1: System.out.println("Sort by first name");
- 					break;
- 					case 2: System.out.println("Sort by last name");
- 					break;
- 					case 3: System.out.println("Sort by gpa (Highest to Lowest)");
- 					break;
- 					case 4: System.out.println("Sort by gpa (Lowest to Highest)");
- 					break;
+ 					case 1: System.out.println("(1) Add a student");
+ 							System.out.println("(2) Delete a student");
+ 							break;
+ 					case 2: System.out.println("(1) Change a grade");
+ 							System.out.println("(2) Switch classes");
+ 							break;
+ 					case 3: System.out.println("(1) Sort by last name");
+ 							System.out.println("(2) Sort by GPA");
+ 							System.out.println("(3) Sort by class");
+ 							break;
  	}
   }
  
