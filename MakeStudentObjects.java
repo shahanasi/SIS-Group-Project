@@ -43,21 +43,21 @@ public class MakeStudentObjects
  		public static int getGPA(String grade)
  		 	{
  		 		if (grade.substring(0,1).equals("A"))
- 		 				{
- 		 					return 4;
- 		 				}
- 		 			else if (grade.substring(0,1).equals("B"))
- 		 				{
- 		 					return 3;
- 		 				}
- 		 			else if (grade.substring(0,1).equals("C"))
- 		 				{
- 		 					return 2;
- 		 				}
- 		 			else if (grade.substring(0,1).equals("D"))
- 		 				{
- 		 					return 1;
- 		 				}
+ 		 			{
+ 		 				return 4;
+ 		 			}
+ 		 		else if (grade.substring(0,1).equals("B"))
+ 					{
+ 		 				return 3;
+ 		 			}
+ 		 		else if (grade.substring(0,1).equals("C"))
+ 		 			{
+ 		 				return 2;
+ 					}
+ 		 		else if (grade.substring(0,1).equals("D"))
+ 		 			{
+ 		 				return 1;
+ 		 			}
  		 		return 0;
  		 	}
  	}
