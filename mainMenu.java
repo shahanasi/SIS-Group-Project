@@ -16,14 +16,14 @@ import java.io.FileNotFoundException;
  			}
  			public static void mainMenu()
  			{
- 				Scanner choice = new Scanner(System.in);
+ 				Scanner input = new Scanner(System.in);
  				System.out.println();
  				System.out.println("Welcome to the Student Gradebook!");
  				System.out.println("What would you like to do?");
  				System.out.println("(1) Add or delete a student");
  				System.out.println("(2) Change a student's grades or schedule");
  				System.out.println("(3) Sort students");
- 				int choice1 = choice.nextInt();
+ 				int choice1 = input.nextInt();
  				// Change this switch statement to run different classes each different case
  				switch (choice1)
  				{
