@@ -33,11 +33,6 @@ public class MakeStudentObjects
 		      			totalGPA = totalGPA / 3;
 		      			gradebook.add(new Student(firstName,lastName,firstClass,firstGrade,secondClass,secondGrade,thirdClass,thirdGrade, totalGPA));
 		      		}
-		for (int i = 0; i < gradebook.size(); i++)
-			{
-				System.out.println(gradebook.get(i).getGPA());
-			}
-
 	}
 		
 	public static double getGPA(String grade)
