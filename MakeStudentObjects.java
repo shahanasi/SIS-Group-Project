@@ -3,6 +3,7 @@
  import java.io.FileNotFoundException;
  import java.util.ArrayList;
  import java.util.Scanner;
+ import java.text.DecimalFormat;
  
 public class MakeStudentObjects
  	{
@@ -31,6 +32,10 @@ public class MakeStudentObjects
  		      		 		      			totalGPA = totalGPA + getGPA(secondGrade);
  		      		 		      			totalGPA = totalGPA + getGPA(thirdGrade);
  		      		 		      			totalGPA = totalGPA / 3;
+ 		      		 		      			
+ 		      		 		      	DecimalFormat df = new DecimalFormat("#.##");
+ 		      		 		      	totalGPA = Double.parseDouble(df.format(totalGPA));
+ 		      		 	        
  		      		 		      			gradebook.add(new Student(firstName,lastName,firstClass,firstGrade,secondClass,secondGrade,thirdClass,thirdGrade, totalGPA));
 		      		}
 		      	
