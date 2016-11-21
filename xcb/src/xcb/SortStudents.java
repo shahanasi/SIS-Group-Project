@@ -1,10 +1,15 @@
 package xcb;
-
+import java.lang.Comparable;
+import java.io.FileNotFoundException;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
-public class SortStudents
+public class SortStudents 
 	{
-		public static void main()
+
+		
+		public static void Menu() throws FileNotFoundException
 		{
 			Scanner input = new Scanner(System.in);
 	
@@ -16,17 +21,14 @@ public class SortStudents
 			{
 				case 1: System.out.println("");
 					{
-						sortByLastName();
+						Collections.sort(MakeStudentObjects.gradebook, new SortLastName());
 					}
 				break;
 				case 2: System.out.println("");
 				break;
-				case 3: System.out.println();
+				case 3: System.out.println(" ");
 				break;
 			}
 		}
-		public static void sortByLastName()
-		{
-			System.out.println("yo");
-		}
+			
 	}

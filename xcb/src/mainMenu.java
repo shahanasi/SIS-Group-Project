@@ -1,15 +1,16 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import xcb.SortStudents;
 public class mainMenu
 	{
 
-		public static void main(String[] args)
+		public static void main(String[] args) throws FileNotFoundException
 			{
 				mainMenu();
 			
 			}
-			public static void mainMenu()
+			public static void mainMenu() throws FileNotFoundException
 			{
 				System.out.println("yo");
 				Scanner sorting = new Scanner(System.in);
@@ -29,7 +30,7 @@ public class mainMenu
 					break;
 					case 3: System.out.println("Sort Students");
 						{
-							SortStudents.main();
+							SortStudents.Menu();
 						}
 					break;
 	}
