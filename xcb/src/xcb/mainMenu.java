@@ -6,7 +6,6 @@ public class mainMenu
 
 		public static void main(String[] args) throws FileNotFoundException
 			{
-				MakeStudentObjects.getStudents();
 				mainMenu();
 			}
 			public static void mainMenu()
