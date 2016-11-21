@@ -38,6 +38,7 @@ public class MakeStudentObjects
 		      		{
 		      			System.out.println(gradebook.get(i).getFirstName());
 		      			System.out.println(gradebook.get(i).getTotalGPA());
+		      			System.out.println();
 		      		}
 			}
  		public static int getGPA(String grade)
