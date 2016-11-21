@@ -71,16 +71,108 @@ public class modifyStudents
 					String newGrade = userInput2.nextLine();
 					MakeStudentObjects.gradebook.get(student - 1).setThirdGrade(newGrade);
 				}
+			double totalGPA = 0.0;
+  			totalGPA = totalGPA + MakeStudentObjects.getGPA(MakeStudentObjects.gradebook.get(student-1).getFirstGrade());
+  			totalGPA = totalGPA + MakeStudentObjects.getGPA(MakeStudentObjects.gradebook.get(student-1).getSecondGrade());
+  			totalGPA = totalGPA + MakeStudentObjects.getGPA(MakeStudentObjects.gradebook.get(student-1).getThirdGrade());
+  			totalGPA = totalGPA / 3;
+  			MakeStudentObjects.gradebook.get(student-1).setGPA(totalGPA);
 		}
 		
 		public static void switchClass()
-		{
+
+			{
+
 			Scanner userInput = new Scanner(System.in);
+
 			Scanner userInput2 = new Scanner(System.in);
+
 			System.out.println("Please type the ID number of the student whose classes you would like to switch.");
+
 			int student = userInput.nextInt();
-			System.out.println("What grade would you like to change?");
-		}
+
+			System.out.println("What classes would you like to change?");
+
+			System.out.println("1) " + MakeStudentObjects.gradebook.get(student-1).getFirstClass());
+
+			System.out.println("2) " + MakeStudentObjects.gradebook.get(student-1).getSecondClass());
+
+			System.out.println("3) " + MakeStudentObjects.gradebook.get(student-1).getThirdClass());
+
+			int firstClassChanged = userInput.nextInt();
+
+			System.out.println("What class would you like to switch it with?");
+
+			int secondClassChanged = userInput.nextInt();
+
+			if ((firstClassChanged == 1 && secondClassChanged == 2) || (firstClassChanged == 2 && secondClassChanged == 1))
+
+			{
+
+			String secondClass = MakeStudentObjects.gradebook.get(student-1).getFirstClass();
+
+			String firstClass = MakeStudentObjects.gradebook.get(student-1).getSecondClass();
+
+			String secondGrade = MakeStudentObjects.gradebook.get(student-1).getFirstGrade();
+
+			String firstGrade = MakeStudentObjects.gradebook.get(student-1).getSecondGrade();
+
+			MakeStudentObjects.gradebook.get(student-1).setFirstClass(firstClass);
+
+			MakeStudentObjects.gradebook.get(student-1).setSecondClass(secondClass);
+
+			MakeStudentObjects.gradebook.get(student-1).setFirstGrade(firstGrade);
+
+			MakeStudentObjects.gradebook.get(student-1).setSecondGrade(secondGrade);
+
+			}
+
+			else if ((firstClassChanged == 1 && secondClassChanged == 3) || (firstClassChanged == 3 && secondClassChanged == 1))
+
+			{
+
+			String thirdClass = MakeStudentObjects.gradebook.get(student-1).getFirstClass();
+
+			String firstClass = MakeStudentObjects.gradebook.get(student-1).getThirdClass();
+
+			String thirdGrade = MakeStudentObjects.gradebook.get(student-1).getFirstGrade();
+
+			String firstGrade = MakeStudentObjects.gradebook.get(student-1).getThirdGrade();
+
+			MakeStudentObjects.gradebook.get(student-1).setFirstClass(firstClass);
+
+			MakeStudentObjects.gradebook.get(student-1).setThirdClass(thirdClass);
+
+			MakeStudentObjects.gradebook.get(student-1).setFirstGrade(firstGrade);
+
+			MakeStudentObjects.gradebook.get(student-1).setThirdGrade(thirdGrade);
+
+			}
+
+			else if ((firstClassChanged == 2 && secondClassChanged == 3) || (firstClassChanged == 3 && secondClassChanged == 2))
+
+			{
+
+			String thirdClass = MakeStudentObjects.gradebook.get(student-1).getSecondClass();
+
+			String secondClass = MakeStudentObjects.gradebook.get(student-1).getThirdClass();
+
+			String thirdGrade = MakeStudentObjects.gradebook.get(student-1).getSecondGrade();
+
+			String secondGrade = MakeStudentObjects.gradebook.get(student-1).getThirdGrade();
+
+			MakeStudentObjects.gradebook.get(student-1).setSecondClass(secondClass);
+
+			MakeStudentObjects.gradebook.get(student-1).setThirdClass(thirdClass);
+
+			MakeStudentObjects.gradebook.get(student-1).setSecondGrade(secondGrade);
+
+			MakeStudentObjects.gradebook.get(student-1).setThirdGrade(thirdGrade);
+
+			}
+
+
+			}
 		
 
 	}

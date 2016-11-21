@@ -10,6 +10,7 @@ public class studentInformationSystemFinalRunner
 				MakeStudentObjects.getStudents();
 				displayStudentNames.makeDisplay();
 				modifyStudents.changeGrade();
+				displayStudentNames.makeDisplay();
 			}
 
 	}
