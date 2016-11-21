@@ -16,13 +16,21 @@ public class modifyStudents
 		{
 			Scanner userInput = new Scanner(System.in);
 			System.out.println("Please type the information for the new student!");
+			System.out.println("Print the first name!");
 			String firstName = userInput.nextLine();
+			System.out.println("Print the last name!");
 			String lastName = userInput.nextLine();
+			System.out.println("Print the first class!");
 			String firstClass = userInput.nextLine();
+			System.out.println("Print the grade for the first class!");
 			String firstGrade = userInput.nextLine();
+			System.out.println("Print the second class!");
 			String secondClass = userInput.nextLine();
+			System.out.println("Print out the second grade!");
 			String secondGrade = userInput.nextLine();
+			System.out.println("Print out the third class!");
 			String thirdClass = userInput.nextLine();
+			System.out.println("Print out the third grade!");
 			String thirdGrade = userInput.nextLine();
 			double totalGPA = 0.0;
   			totalGPA = totalGPA + MakeStudentObjects.getGPA(firstGrade);
